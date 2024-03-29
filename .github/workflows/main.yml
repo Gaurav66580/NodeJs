@@ -22,7 +22,6 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t gauravkumar66580/nextjs:nextjs .
-        working-directory: ./path/to/your/dockerfile/directory
 
       - name: Push Docker image to Docker Hub
         run: docker push gauravkumar66580/nextjs:nextjs

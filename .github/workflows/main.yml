@@ -24,6 +24,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        
+      - name: Lint with ESLint
+        run: npm run lint
 
+      - name: Format with Prettier
+        run: npm run format
+        
       - name: Build
         run: npm run build
